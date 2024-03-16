@@ -1,0 +1,22 @@
+body {
+    margin:"0";
+    background:"#EDEDED";
+    
+}
+.main {
+    max-width: 950px;
+    margin-inline: auto;
+}
+input {
+    padding: 8px 15px;
+    border: 2px solid rgba(104, 149, 155, 0.8);
+    font-family:'Courier New', Courier, monospace;
+    color: aliceblue;
+    background: #56858C;
+}
+ul {
+    
+    font-size: large;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: #00262b;
+}
