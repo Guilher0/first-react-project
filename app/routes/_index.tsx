@@ -1,5 +1,6 @@
 import type { MetaFunction } from "@remix-run/node";
 import styles from "app/styles/styles.module.css";
+import useCounter from "hooks/useCounter";
 
 
 
@@ -11,13 +12,22 @@ export const meta: MetaFunction = () => {
 };
 
 export default function Index() {
+
+  const counter = useCounter ()
+
   return (
   <div className={styles.main}>
     <div className="">
       <div style={{ fontFamily: "system-ui, sans-serif", lineHeight: "1.6", padding:"35px 0", background: "rgb(114, 166, 181)", textAlign:"center"}}>
         <img src="img/react.png" alt="React Remix" title="react remix"/>
-        <h1>Welcome to  React Remix</h1>
-
+        <h1>Welcome to  React Remix </h1>
+        
+        <button
+        onClick={counter.increment}
+        style={{}}
+        >
+          Contador {counter.contador}
+        </button>
         <p>A biblioteca para interfaces de usuários Web e Nativas</p>
       </div>
 
